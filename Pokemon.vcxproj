@@ -127,8 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="mewtwo.cpp" />
     <ClCompile Include="pokemon.cpp" />
     <ClCompile Include="sample.cpp" />
+    <ClCompile Include="picachu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mewtwo.h" />
