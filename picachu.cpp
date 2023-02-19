@@ -8,10 +8,10 @@ CPicachu::CPicachu()
 {
     std::cout << "ピカチュウ誕生\n";
 
-    std::cout << mLevel << "レベル\n";
-    std::cout << mHitPoint << "HP\n";
-    std::cout << mAttackPoint << "攻撃\n";
-    std::cout << mDefensePoint << "防御\n";
+    std::cout << "レベル\t= " << mLevel        << "\n";
+    std::cout << "HP    \t= " << mHitPoint     << "\n";
+    std::cout << "攻撃  \t= " << mAttackPoint  << "\n";
+    std::cout << "防御  \t= " << mDefensePoint << "\n";
 }
 
 // ------------------------------------------------------------------------- //
@@ -40,7 +40,7 @@ void CPicachu::Damage(int aDamagePoint)
 
     std::cout << "ピカチュウ" << "は" << "攻撃を受けた。\n";
     std::cout << aDamagePoint << " ダメージ！" << "\n";
-    std::cout << mHitPoint << "HP\n";
+    std::cout << "残りHP = " << mHitPoint << "\n";
     if (mHitPoint <= 0)
     {
         std::cout << "ピカチュウ" << "は" << "倒れた。\n";
