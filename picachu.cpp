@@ -26,7 +26,8 @@ CPicachu::~CPicachu()
 // ------------------------------------------------------------------------- //
 int CPicachu::Attack()
 {
-    std::cout << "10万ボルト！\n";
+    std::cout << "ピカチュウ" << "の" << "攻撃！\n";
+    std::cout << "10万ボルト！" << "\n";
     return mAttackPoint;
 }
 
@@ -36,6 +37,12 @@ int CPicachu::Attack()
 void CPicachu::Damage(int aDamagePoint)
 {
     mHitPoint -= aDamagePoint;
-    std::cout << "ピカチュウはダメージを受けた\n";
+
+    std::cout << "ピカチュウ" << "は" << "攻撃を受けた。\n";
+    std::cout << aDamagePoint << " ダメージ！" << "\n";
     std::cout << mHitPoint << "HP\n";
+    if (mHitPoint <= 0)
+    {
+        std::cout << "ピカチュウ" << "は" << "倒れた。\n";
+    }
 }
