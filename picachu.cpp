@@ -41,7 +41,6 @@ void CPicachu::Damage(int aDamagePoint)
     std::cout << "ピカチュウ" << "は" << "攻撃を受けた。\n";
     std::cout << aDamagePoint << " ダメージ！" << "\n";
     std::cout << mHitPoint << "HP\n";
-    std::cout << mHitPoint << "HP\n";
     if (mHitPoint <= 0)
     {
         std::cout << "ピカチュウ" << "は" << "倒れた。\n";
