@@ -18,13 +18,13 @@
     <ClCompile Include="pokemon.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="sample.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
     <ClCompile Include="mewtwo.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="picachu.cpp">
+    <ClCompile Include="pikachu.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="monster.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
@@ -34,6 +34,9 @@
     </ClInclude>
     <ClInclude Include="mewtwo.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="monster.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

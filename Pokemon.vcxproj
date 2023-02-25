@@ -128,12 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="mewtwo.cpp" />
+    <ClCompile Include="monster.cpp" />
     <ClCompile Include="pokemon.cpp" />
-    <ClCompile Include="sample.cpp" />
     <ClCompile Include="pikachu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mewtwo.h" />
+    <ClInclude Include="monster.h" />
     <ClInclude Include="pikachu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
