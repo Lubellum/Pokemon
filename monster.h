@@ -16,7 +16,7 @@ public:
     void Damage(int aDamagePoint);
 
 
-private:
+protected:
 
     int mLevel;         // ƒŒƒxƒ‹.
     int mHitPoint;      // HP.
