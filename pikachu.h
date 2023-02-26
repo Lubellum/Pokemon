@@ -3,10 +3,10 @@
 // ========================================================================= //
 //  【モンスター】ピカチュウ
 // ========================================================================= //
-class CPicachu : public CMonster
+class CPikachu : public CMonster
 {
 public:
 
-    CPicachu();
-    virtual ~CPicachu();
+    CPikachu();
+    virtual ~CPikachu();
 };
