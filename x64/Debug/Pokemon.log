@@ -1,27 +1,5 @@
 ﻿  monster.cpp
   pikachu.cpp
-C:\Users\azuky\source\repos\Pokemon\pikachu.cpp(27,15): error C2509: 'Attack': メンバー関数が 'CPikachu' で宣言されていません。
-C:\Users\azuky\source\repos\Pokemon\pikachu.h(6,7): message : 'CPikachu' の宣言を確認してください
-C:\Users\azuky\source\repos\Pokemon\pikachu.cpp(37,16): error C2509: 'Damage': メンバー関数が 'CPikachu' で宣言されていません。
-C:\Users\azuky\source\repos\Pokemon\pikachu.h(6,7): message : 'CPikachu' の宣言を確認してください
   pokemon.cpp
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(5,6): error C2182: 'Battle': 'void' のこの使用は無効です
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(5,13): error C2065: 'CPicachu': 定義されていない識別子です。
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(5,24): error C2065: 'picachu': 定義されていない識別子です。
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(5,43): error C2065: 'mewtwo': 定義されていない識別子です。
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(5,33): error C2275: 'CMewtwo': 型の代わりに式が必要です
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(6,1): error C2143: 構文エラー: ';' が '{' の前にありません。
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(7,30): error C2065: 'picachu': 定義されていない識別子です。
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(8,11): error C3927: '->': 後続の戻り値の型は、関数以外の宣言子の後に許可されていません
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(8,13): error C3613: '->' の後に戻り型が指定されていません ('int' と見なされます)
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(8,19): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(8,13): error C2146: 構文エラー: ';' が、識別子 'Damage' の前に必要です。
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(11,12): error C3927: '->': 後続の戻り値の型は、関数以外の宣言子の後に許可されていません
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(11,14): error C3613: '->' の後に戻り型が指定されていません ('int' と見なされます)
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(11,20): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(11,14): error C2146: 構文エラー: ';' が、識別子 'Damage' の前に必要です。
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(12,1): error C2059: 構文エラー: '}'
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(12,1): error C2143: 構文エラー: ';' が '}' の前にありません。
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(15,1): error C2143: 構文エラー: ';' が '{' の前にありません。
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(15,1): error C2447: '{': 対応する関数ヘッダーがありません (旧形式の仮引数リスト?)
   コードを生成中...
+  Pokemon.vcxproj -> C:\Users\azuky\source\repos\Pokemon\x64\Debug\Pokemon.exe
