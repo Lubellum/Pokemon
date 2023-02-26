@@ -14,7 +14,7 @@
 int main()
 {
     CPikachu pikachu;
-    pikachu.Attack();
+    //pikachu.Attack();
     /*CMewtwo  mewtwo;
 
     Battle(&picachu, &mewtwo);*/
