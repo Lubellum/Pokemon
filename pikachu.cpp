@@ -4,14 +4,14 @@
 //  コンストラクタ.
 // ------------------------------------------------------------------------- //
 CPikachu::CPikachu()
-    //: mLevel(10), mHitPoint(30), mAttackPoint(20), mDefensePoint(15)
+    : CMonster
+    (
+        10, // レベル.
+        30, // HP.
+        20, // 攻撃.
+        15  // 防御.
+    )
 {
-//    std::cout << "ピカチュウ誕生\n";
-//
-//    std::cout << "レベル\t= " << mLevel        << "\n";
-//    std::cout << "HP    \t= " << mHitPoint     << "\n";
-//    std::cout << "攻撃  \t= " << mAttackPoint  << "\n";
-//    std::cout << "防御  \t= " << mDefensePoint << "\n";
 }
 
 // ------------------------------------------------------------------------- //

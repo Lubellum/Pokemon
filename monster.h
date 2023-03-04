@@ -1,5 +1,3 @@
-// 継承元でもコンストラクタ・デストラクタは無いといけない
-
 #include <iostream>
 
 // ========================================================================= //
@@ -10,16 +8,23 @@ class CMonster
 public:
 
     CMonster();
+    CMonster
+    (
+        int aLevel,       // レベル.
+        int aHitPoint,    // HP.
+        int aAttackPoint, // 攻撃.
+        int aDefensePoint // 防御.
+    );
     virtual ~CMonster();
 
     int Attack();
+    int Guard();
     void Damage(int aDamagePoint);
 
+private:
 
-protected:
-
-    int mLevel;         // レベル.
-    int mHitPoint;      // HP.
-    int mAttackPoint;   // 攻撃.
-    int mDefensePoint;  // 防御.
+    int mLevel;        // レベル.
+    int mHitPoint;     // HP.
+    int mAttackPoint;  // 攻撃.
+    int mDefensePoint; // 防御.
 };

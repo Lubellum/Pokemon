@@ -4,7 +4,17 @@
 //  コンストラクタ.
 // ------------------------------------------------------------------------- //
 CMonster::CMonster()
-    : mLevel(0), mHitPoint(0), mAttackPoint(0), mDefensePoint(0)
+    : mLevel(), mHitPoint(), mAttackPoint(), mDefensePoint()
+{
+}
+
+CMonster::CMonster(
+    int aLevel,       // レベル.
+    int aHitPoint,    // HP.
+    int aAttackPoint, // 攻撃.
+    int aDefensePoint // 防御.
+)
+    : mLevel(aLevel), mHitPoint(aHitPoint), mAttackPoint(aAttackPoint), mDefensePoint(aDefensePoint)
 {
     std::cout << "誕生!\n";
 
