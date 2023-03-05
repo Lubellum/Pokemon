@@ -13,7 +13,7 @@ public:
         int aLevel,       // ƒŒƒxƒ‹.
         int aHitPoint,    // HP.
         int aAttackPoint, // UŒ‚.
-        int aDefensePoint // –hŒä.
+        int aDefencePoint // –hŒä.
     );
     virtual ~CMonster();
 
@@ -26,5 +26,5 @@ private:
     int mLevel;        // ƒŒƒxƒ‹.
     int mHitPoint;     // HP.
     int mAttackPoint;  // UŒ‚.
-    int mDefensePoint; // –hŒä.
+    int mDefencePoint; // –hŒä.
 };
