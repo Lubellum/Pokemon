@@ -27,6 +27,9 @@
     <ClCompile Include="monster.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="squirtle.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pikachu.h">
@@ -37,6 +40,9 @@
     </ClInclude>
     <ClInclude Include="monster.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="squirtle.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 #include "pikachu.h"
 #include "mewtwo.h"
+#include "squirtle.h"
 
 //void Battle(CPicachu * picachu, CMewtwo * mewtwo)
 //{
@@ -15,11 +16,12 @@
 
 int main()
 {
-    CPikachu pikachu;
+    //CPikachu pikachu;
     //CMonster* monster = new CMonster;
     //CMonster* pikachu = new CPikachu;
     //pikachu.Attack();
-    /*CMewtwo  mewtwo;
+    //CMewtwo  mewtwo;
+    CSquirtle squirtle;
 
-    Battle(&picachu, &mewtwo);*/
+    //Battle(&picachu, &mewtwo);
 }

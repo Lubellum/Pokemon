@@ -131,11 +131,13 @@
     <ClCompile Include="monster.cpp" />
     <ClCompile Include="pokemon.cpp" />
     <ClCompile Include="pikachu.cpp" />
+    <ClCompile Include="squirtle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mewtwo.h" />
     <ClInclude Include="monster.h" />
     <ClInclude Include="pikachu.h" />
+    <ClInclude Include="squirtle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
