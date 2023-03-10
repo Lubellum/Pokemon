@@ -3,15 +3,13 @@
 #include "mewtwo.h"
 #include "squirtle.h"
 
-//void Battle(CPicachu * picachu, CMewtwo * mewtwo)
+//void Battle(Pikachu * pikachu, CMewtwo * mewtwo)
 //{
-//    int picachuDamagePoint = picachu->Attack();
-//      // ミュウツーのガード
-//    mewtwo->Damage(picachuDamagePoint);
+//    int pikachuDamagePoint = pikachu->Attack();
+//    mewtwo->Damage(pikachuDamagePoint);
 //
 //    int mewtwoDamagePoint = mewtwo->Attack();
-        // ピカチュウのガード
-//    picachu->Damage(mewtwoDamagePoint);
+//    pikachu->Damage(mewtwoDamagePoint);
 //}
 
 int main()
@@ -23,5 +21,5 @@ int main()
     //CMewtwo  mewtwo;
     CSquirtle squirtle;
 
-    //Battle(&picachu, &mewtwo);
+    //Battle(&pikachu, &mewtwo);
 }
