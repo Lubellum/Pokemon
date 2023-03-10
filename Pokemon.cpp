@@ -12,6 +12,12 @@
 //    pikachu->Damage(mewtwoDamagePoint);
 //}
 
+void Battle(CSquirtle* squirtle)
+{
+    int squirtleDamagePoint = squirtle->Attack();
+    squirtle->Damage(squirtleDamagePoint);
+}
+
 int main()
 {
     //CPikachu pikachu;
@@ -21,5 +27,6 @@ int main()
     //CMewtwo  mewtwo;
     CSquirtle squirtle;
 
+    Battle(&squirtle);
     //Battle(&pikachu, &mewtwo);
 }
