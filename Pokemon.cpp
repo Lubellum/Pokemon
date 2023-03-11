@@ -15,6 +15,7 @@
 void Battle(CSquirtle* squirtle)
 {
     int squirtleDamagePoint = squirtle->Attack();
+    squirtleDamagePoint = squirtle->Guard();
     squirtle->Damage(squirtleDamagePoint);
 }
 
