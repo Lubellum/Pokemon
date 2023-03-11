@@ -7,6 +7,7 @@
 // ========================================================================= //
 //  【モンスター】基底クラス
 // ========================================================================= //
+
 class CMonster
 {
 public:
@@ -22,7 +23,7 @@ public:
     virtual ~CMonster();
 
     int Attack();
-    int Guard();
+    int Guard(int aAttackPoint);
     void Damage(int aDamagePoint);
 
 private:
