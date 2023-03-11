@@ -12,22 +12,21 @@
 //    pikachu->Damage(mewtwoDamagePoint);
 //}
 
-void Battle(CSquirtle* squirtle)
-{
-    int squirtleDamagePoint = squirtle->Attack();
-    squirtleDamagePoint = squirtle->Guard();
-    squirtle->Damage(squirtleDamagePoint);
-}
+//void Battle(CSquirtle* squirtle)
+//{
+//    //int squirtleDamagePoint = squirtle->Attack();
+//    int squirtleDamagePoint = squirtle->Guard();
+//    squirtle->Damage(squirtleDamagePoint);
+//}
 
 int main()
 {
-    //CPikachu pikachu;
+    CPikachu pikachu;
+    CMewtwo  mewtwo;
     //CMonster* monster = new CMonster;
     //CMonster* pikachu = new CPikachu;
-    //pikachu.Attack();
-    //CMewtwo  mewtwo;
-    CSquirtle squirtle;
+    //CSquirtle squirtle;
 
-    Battle(&squirtle);
+    //Battle(&squirtle);
     //Battle(&pikachu, &mewtwo);
 }

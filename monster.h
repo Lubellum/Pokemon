@@ -1,3 +1,7 @@
+#ifndef MONSTER_H_INCLUDED
+
+#define MONSTER_H_INCLUDED
+
 #include <iostream>
 
 // ========================================================================= //
@@ -28,3 +32,5 @@ private:
     int mAttackPoint;  // çUåÇ.
     int mDefencePoint; // ñhå‰.
 };
+
+#endif // !MONSTER_H_INCLUDED
