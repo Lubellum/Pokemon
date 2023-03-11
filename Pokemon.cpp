@@ -3,30 +3,21 @@
 #include "mewtwo.h"
 #include "squirtle.h"
 
-//void Battle(Pikachu * pikachu, CMewtwo * mewtwo)
-//{
-//    int pikachuDamagePoint = pikachu->Attack();
-//    mewtwo->Damage(pikachuDamagePoint);
-//
-//    int mewtwoDamagePoint = mewtwo->Attack();
-//    pikachu->Damage(mewtwoDamagePoint);
-//}
+void Battle(CMonster * pokemon1, CMonster * pokemon2)
+{
+    int pokemon1DamagePoint = pokemon1->Attack();
+    pokemon2->Damage(pokemon1DamagePoint);
 
-//void Battle(CSquirtle* squirtle)
-//{
-//    //int squirtleDamagePoint = squirtle->Attack();
-//    int squirtleDamagePoint = squirtle->Guard();
-//    squirtle->Damage(squirtleDamagePoint);
-//}
+    int pokemon2DamagePoint = pokemon2->Attack();
+    pokemon1->Damage(pokemon2DamagePoint);
+}
 
 int main()
 {
     CPikachu pikachu;
     CMewtwo  mewtwo;
-    //CMonster* monster = new CMonster;
-    //CMonster* pikachu = new CPikachu;
-    //CSquirtle squirtle;
+    CSquirtle squirtle;
 
-    //Battle(&squirtle);
-    //Battle(&pikachu, &mewtwo);
+    Battle(&mewtwo, &squirtle);
+    Battle(&pikachu, &mewtwo);
 }
