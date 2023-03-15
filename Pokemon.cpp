@@ -5,31 +5,31 @@
 
 // 1P用の入力関数
 // 0 -> attack, 1 -> guard
-int inputaction1(CMonster * pokemon)
-{
-    std::cout << "数字を入力してください 0：Attack　1：Guard\n";
-    int command;
-    std::cin >> command;
-
-    switch (command)
-    {
-    case 0:
-        pokemon->Attack();
-        break;
-
-    case 1:
-        pokemon->Guard(pokemon->Attack());
-        break;
-
-    default:
-
-        break;
-    }
-}
+//int inputaction1(CMonster * pokemon)
+//{
+//    std::cout << "数字を入力してください 0：Attack　1：Guard\n";
+//    int command;
+//    std::cin >> command;
+//
+//    switch (command)
+//    {
+//    case 0:
+//        pokemon->Attack();
+//        break;
+//
+//    case 1:
+//        pokemon->Guard(pokemon->Attack());
+//        break;
+//
+//    default:
+//
+//        break;
+//    }
+//}
 
 // 2P用の入力関数
 // 0 -> attack, 1 -> guard
-int inputaction2();
+//int inputaction2();
 
 void Battle(CMonster * pokemon1, CMonster * pokemon2)
 {
@@ -48,7 +48,7 @@ int main()
     CMewtwo  mewtwo;
     CSquirtle squirtle;
 
-    int inputaction1();
+    //int inputaction1();
     //int inputaction2();
 
     Battle(&mewtwo, &squirtle);

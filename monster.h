@@ -3,6 +3,7 @@
 #define MONSTER_H_INCLUDED
 
 #include <iostream>
+#include <string>
 
 // ========================================================================= //
 //  yƒ‚ƒ“ƒXƒ^[zŠî’êƒNƒ‰ƒX
@@ -15,10 +16,11 @@ public:
     CMonster();
     CMonster
     (
-        int aLevel,       // ƒŒƒxƒ‹.
-        int aHitPoint,    // HP.
-        int aAttackPoint, // UŒ‚.
-        int aDefencePoint // –hŒä.
+        std::string aName, // –¼‘O
+        int aLevel,        // ƒŒƒxƒ‹.
+        int aHitPoint,     // HP.
+        int aAttackPoint,  // UŒ‚.
+        int aDefencePoint  // –hŒä.
     );
     virtual ~CMonster();
 
@@ -28,6 +30,7 @@ public:
 
 private:
 
+    std::string mName; // –¼‘O
     int mLevel;        // ƒŒƒxƒ‹.
     int mHitPoint;     // HP.
     int mAttackPoint;  // UŒ‚.

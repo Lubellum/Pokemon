@@ -4,19 +4,20 @@
 //  ƒRƒ“ƒXƒgƒ‰ƒNƒ^.
 // ------------------------------------------------------------------------- //
 CMonster::CMonster()
-    : mLevel(), mHitPoint(), mAttackPoint(), mDefencePoint()
+    : mName(), mLevel(), mHitPoint(), mAttackPoint(), mDefencePoint()
 {
 }
 
 CMonster::CMonster(
-    int aLevel,       // ƒŒƒxƒ‹.
-    int aHitPoint,    // HP.
-    int aAttackPoint, // UŒ‚.
-    int aDefensePoint // –hŒä.
+    std::string aName, // –¼‘O.
+    int aLevel,        // ƒŒƒxƒ‹.
+    int aHitPoint,     // HP.
+    int aAttackPoint,  // UŒ‚.
+    int aDefensePoint  // –hŒä.
 )
-    : mLevel(aLevel), mHitPoint(aHitPoint), mAttackPoint(aAttackPoint), mDefencePoint(aDefensePoint)
+    : mName(aName), mLevel(aLevel), mHitPoint(aHitPoint), mAttackPoint(aAttackPoint), mDefencePoint(aDefensePoint)
 {
-    std::cout << "’a¶!\n";
+    std::cout << mName << "’a¶!\n";
 
     std::cout << "ƒŒƒxƒ‹\t= " << mLevel        << "\n";
     std::cout << "HP    \t= " << mHitPoint     << "\n";
@@ -37,7 +38,6 @@ CMonster::~CMonster()
 int CMonster::Attack()
 {
     std::cout << "" << "‚Ì" << "UŒ‚I\n";
-    std::cout << "" << "\n";
     return mAttackPoint;
 }
 

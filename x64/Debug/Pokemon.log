@@ -1,7 +1,7 @@
 ﻿  mewtwo.cpp
   monster.cpp
-  pokemon.cpp
   pikachu.cpp
+  pokemon.cpp
   squirtle.cpp
   コードを生成中...
-C:\Users\azuky\source\repos\Pokemon\pokemon.cpp(28): error C4716: 'inputaction1': 値を返さなければいけません
+  Pokemon.vcxproj -> C:\Users\azuky\source\repos\Pokemon\x64\Debug\Pokemon.exe
