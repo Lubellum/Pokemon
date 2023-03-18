@@ -37,7 +37,7 @@ CMonster::~CMonster()
 // ------------------------------------------------------------------------- //
 int CMonster::Attack()
 {
-    std::cout << "" << "‚Ì" << "UŒ‚I\n";
+    std::cout << mName << "‚Ì" << "UŒ‚I\n";
     return mAttackPoint;
 }
 
@@ -46,7 +46,7 @@ int CMonster::Attack()
 // ------------------------------------------------------------------------- //
 int CMonster::Guard(int aAttackPoint)
 {
-    std::cout << "" << "‚Ì" << "–hŒäI\n";
+    std::cout << mName << "‚Ì" << "–hŒäI\n";
     int result = aAttackPoint / 2;
     return result;
 }
@@ -58,11 +58,11 @@ void CMonster::Damage(int aDamagePoint)
 {
     mHitPoint -= aDamagePoint;
 
-    std::cout << "" << "‚Í" << "UŒ‚‚ðŽó‚¯‚½B\n";
+    std::cout << mName << "‚Í" << "UŒ‚‚ðŽó‚¯‚½B\n";
     std::cout << aDamagePoint << " ƒ_ƒ[ƒWI" << "\n";
     std::cout << "Žc‚èHP = " << mHitPoint << "\n\n\n";
     if (mHitPoint <= 0)
     {
-        std::cout << "" << "‚Í" << "“|‚ê‚½B\n";
+        std::cout << mName << "‚Í" << "“|‚ê‚½B\n";
     }
 }

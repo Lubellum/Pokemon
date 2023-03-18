@@ -3,33 +3,54 @@
 #include "mewtwo.h"
 #include "squirtle.h"
 
-// 1P用の入力関数
-// 0 -> attack, 1 -> guard
-//int inputaction1(CMonster * pokemon)
-//{
-//    std::cout << "数字を入力してください 0：Attack　1：Guard\n";
-//    int command;
-//    std::cin >> command;
-//
-//    switch (command)
-//    {
-//    case 0:
-//        pokemon->Attack();
-//        break;
-//
-//    case 1:
-//        pokemon->Guard(pokemon->Attack());
-//        break;
-//
-//    default:
-//
-//        break;
-//    }
-//}
+
+//1P用の入力関数
+//0 -> attack, 1 -> guard
+
+int inputaction1()
+{
+    std::cout << "数字を入力してください(1P) 0：Attack　1：Guard\n";
+    int command;
+    std::cin >> command;
+
+    return command;
+}
 
 // 2P用の入力関数
-// 0 -> attack, 1 -> guard
-//int inputaction2();
+int inputaction2()
+{
+    std::cout << "数字を入力してください(2P) 0：Attack　1：Guard\n";
+    int command;
+    std::cin >> command;
+
+    return command;
+}
+
+void execution(CMonster * pokemon1 , CMonster * pokemon2 ,int command1, int command2)
+{
+    if (command1 == 0 && command2 == 0)
+    {
+        //1P Attack 2P Attack
+        int command_1P = pokemon1->Attack();
+        int command_2P = pokemon2->Attack();
+    } else if (command1 == 0 && command2 == 1)
+    {
+        //1P Attack 2P Guard
+        int command_1P = pokemon1->Attack();
+        int command_2P = pokemon2->Guard(command_1P);
+    } else if (command1 == 1 && command2 == 0)
+    {
+        //1P Guard 2P Attack
+        int command_2P = pokemon2->Attack();
+        int command_1P = pokemon1->Guard(command_2P);
+    }
+    else
+    {
+        //1P Guard 2P Guard
+        std::cout << "お互いに防御\n";
+    }
+}
+
 
 void Battle(CMonster * pokemon1, CMonster * pokemon2)
 {
@@ -48,9 +69,11 @@ int main()
     CMewtwo  mewtwo;
     CSquirtle squirtle;
 
-    //int inputaction1();
-    //int inputaction2();
+    int command1 = inputaction1();
+    int command2 = inputaction2();
 
-    Battle(&mewtwo, &squirtle);
-    Battle(&pikachu, &mewtwo);
+    execution(&pikachu, &mewtwo, command1, command2);
+
+    //Battle(&mewtwo, &squirtle);
+    //Battle(&pikachu, &mewtwo);
 }
