@@ -6,24 +6,29 @@
 
 //1P用の入力関数
 //0 -> attack, 1 -> guard
-
-int inputaction1()
+enum class tAction : int
 {
-    std::cout << "数字を入力してください(1P) 0：Attack　1：Guard\n";
+    nAttack, // 0
+    nGuard,  // 1
+};
+
+tAction inputaction1()
+{
+    std::cout << "数字を入力してください(1P) nAttack：Attack　nGuard：Guard\n";
     int command;
     std::cin >> command;
 
-    return command;
+    return static_cast< tAction >( command );
 }
 
 // 2P用の入力関数
-int inputaction2()
+tAction inputaction2()
 {
-    std::cout << "数字を入力してください(2P) 0：Attack　1：Guard\n";
+    std::cout << "数字を入力してください(2P) nAttack：Attack　nGuard：Guard\n";
     int command;
     std::cin >> command;
 
-    return command;
+    return static_cast< tAction >( command );
 }
 
 void attack()
@@ -84,8 +89,8 @@ int main()
     CMewtwo  mewtwo;
     CSquirtle squirtle;
 
-    int command1 = inputaction1();
-    int command2 = inputaction2();
+    tAction command1 = inputaction1();
+    tAction command2 = inputaction2();
 
     //execution(&pikachu, &mewtwo, command1, command2);
 
