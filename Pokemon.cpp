@@ -43,14 +43,14 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     else if (command1 == tAction::nGuard && command2 == tAction::nAttack)
     {
         int pokemon2Attack = pokemon2->Attack();
-        int pokemon1Guard = pokemon1->Guard(pokemon2Attack);
-        pokemon1->Damage(pokemon1Guard);
+        pokemon1->Guard();
+        pokemon1->Damage(pokemon2Attack);
     }
     else if (command1 == tAction::nAttack && command2 == tAction::nGuard)
     {
         int pokemon1Attack = pokemon1->Attack();
-        int pokemon2Guard = pokemon2->Guard(pokemon1Attack);
-        pokemon2->Damage(pokemon2Guard);
+        pokemon2->Guard();
+        pokemon2->Damage(pokemon1Attack);
     }
     else
     {

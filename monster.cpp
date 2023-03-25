@@ -4,7 +4,7 @@
 //  コンストラクタ.
 // ------------------------------------------------------------------------- //
 CMonster::CMonster()
-    : mName(), mLevel(), mHitPoint(), mAttackPoint(), mDefencePoint()
+    : mName(), mLevel(), mHitPoint(), mAttackPoint(), mDefencePoint(), mGuardFlag()
 {
 }
 
@@ -15,7 +15,7 @@ CMonster::CMonster(
     int aAttackPoint,  // 攻撃.
     int aDefensePoint  // 防御.
 )
-    : mName(aName), mLevel(aLevel), mHitPoint(aHitPoint), mAttackPoint(aAttackPoint), mDefencePoint(aDefensePoint)
+    : mName(aName), mLevel(aLevel), mHitPoint(aHitPoint), mAttackPoint(aAttackPoint), mDefencePoint(aDefensePoint), mGuardFlag()
 {
     std::cout << mName << "誕生!\n";
 
@@ -44,11 +44,11 @@ int CMonster::Attack()
 // ------------------------------------------------------------------------- //
 //  防御.
 // ------------------------------------------------------------------------- //
-int CMonster::Guard(int aAttackPoint)
+bool CMonster::Guard()
 {
     std::cout << mName << "の" << "防御！\n";
-    int result = aAttackPoint / 2;
-    return result;
+    mGuardFlag = true;
+    return mGuardFlag;
 }
 
 // ------------------------------------------------------------------------- //
@@ -56,10 +56,13 @@ int CMonster::Guard(int aAttackPoint)
 // ------------------------------------------------------------------------- //
 void CMonster::Damage(int aDamagePoint)
 {
-    mHitPoint -= aDamagePoint;
-
     std::cout << mName << "は" << "攻撃を受けた。\n";
+    if (mGuardFlag)
+    {
+        aDamagePoint -= aDamagePoint / 2;
+    }
     std::cout << aDamagePoint << " ダメージ！" << "\n";
+    mHitPoint -= aDamagePoint;
     std::cout << "残りHP = " << mHitPoint << "\n\n\n";
     if (mHitPoint <= 0)
     {

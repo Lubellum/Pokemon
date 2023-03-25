@@ -25,7 +25,7 @@ public:
     virtual ~CMonster();
 
     int Attack();
-    int Guard(int aAttackPoint);
+    bool Guard();
     void Damage(int aDamagePoint);
 
 private:
@@ -35,6 +35,7 @@ private:
     int mHitPoint;     // HP.
     int mAttackPoint;  // çUåÇ.
     int mDefencePoint; // ñhå‰.
+    bool mGuardFlag;
 };
 
 #endif // !MONSTER_H_INCLUDED
