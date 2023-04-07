@@ -2,6 +2,7 @@
 #include "pikachu.h"
 #include "mewtwo.h"
 #include "squirtle.h"
+#include <random>
 
 enum class tAction : int
 {
@@ -30,6 +31,7 @@ tAction inputaction2()
     return static_cast< tAction >( command );
 }
 
+
 void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction command2)
 {
     if (command1 == tAction::nAttack && command2 == tAction::nAttack)
@@ -56,10 +58,56 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     {
         std::cout << "お互いに防御した！\n";
     }
+
+
+    //// 1Pの攻撃
+    //if (command1 == tAction::nAttack)
+    //{
+    //    int attackPoint = pokemon1->Attack();
+
+    //    // 2Pへダメージ
+    //    pokemon2->Damage(attackPoint);
+    //}
+    //else if (command1 == tAction::nGuard)
+    //{
+    //    pokemon1->Guard();
+    //}
+    //else
+    //{
+    //    std::cout << "エラー：入力に間違いがあります。";
+    //}
+
+    //// 2Pの攻撃
+    //if (command2 == tAction::nAttack)
+    //{
+    //    int attackpoint = pokemon2->Attack();
+
+    //    // 1Pへダメージ
+    //    pokemon1->Damage(attackpoint);
+    //}
+    //else if (command2 == tAction::nGuard)
+    //{
+    //    pokemon2->Guard();
+    //}
+    //else
+    //{
+    //    std::cout << "エラー：入力に間違いがあります。";
+    //}
 }
 
 int main()
 {
+    /*std::mt19937 mt(101);
+    for (int i = 0; i < 10; ++i) {
+        std::cout << mt() << "\n";
+    }*/
+
+    std::random_device mt2;
+    //for ( int i = 0; i < 10; i++)
+    {
+        std::cout << mt2() << "\n";
+    }
+
     CPikachu pikachu;
     CMewtwo  mewtwo;
     CSquirtle squirtle;
