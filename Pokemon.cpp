@@ -10,25 +10,35 @@ enum class tAction : int
     nGuard,  // 1
 };
 
-//1P用の入力関数
-//0 -> attack, 1 -> guard
-tAction inputaction1()
+tAction input_action()
 {
-    std::cout << "数字を入力してください(1P) nAttack：Attack　nGuard：Guard\n";
+    std::cout << "数字を入力してください nAttack：Attack　nGuard：Guard\n";
     int command;
     std::cin >> command;
 
-    return static_cast< tAction >( command );
+    return static_cast<tAction>(command);
 }
 
-// 2P用の入力関数
-tAction inputaction2()
+// コマンドをランダムに決定
+tAction random_action()
 {
-    std::cout << "数字を入力してください(2P) nAttack：Attack　nGuard：Guard\n";
-    int command;
-    std::cin >> command;
+    std::random_device seed;
+    std::mt19937 mt(seed());
+    return static_cast<tAction>(mt() % 2);
+}
 
-    return static_cast< tAction >( command );
+//1P用の入力関数
+//0 -> attack, 1 -> guard
+tAction selectaction1()
+{
+    std::cout << "1Pの入力" << "\n";
+    return input_action();
+}
+
+// 
+tAction selectaction2()
+{
+    return random_action();
 }
 
 
@@ -97,23 +107,14 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
 
 int main()
 {
-    /*std::mt19937 mt(101);
-    for (int i = 0; i < 10; ++i) {
-        std::cout << mt() << "\n";
-    }*/
-
-    std::random_device mt2;
-    //for ( int i = 0; i < 10; i++)
-    {
-        std::cout << mt2() << "\n";
-    }
+    random_action();
 
     CPikachu pikachu;
     CMewtwo  mewtwo;
     CSquirtle squirtle;
 
-    tAction command1 = inputaction1();
-    tAction command2 = inputaction2();
+    tAction command1 = selectaction1();
+    tAction command2 = selectaction2();
 
     execution(&pikachu, &mewtwo, command1, command2);
 }
