@@ -105,6 +105,25 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     //}
 }
 
+bool should_continue(CMonster* pokemon1, CMonster* pokemon2)
+{
+    int pokemon1HP = pokemon1->pass_HP();
+    int pokemon2HP = pokemon2->pass_HP();
+
+    if (pokemon1HP < 0)
+    {
+        return false;
+    }
+    else if (pokemon2HP < 0)
+    {
+        return false;
+    }
+    else
+    {
+        return true;
+    }
+}
+
 int main()
 {
     random_action();
@@ -113,14 +132,14 @@ int main()
     CMewtwo  mewtwo;
     CSquirtle squirtle;
 
-    // ループ始まり
-    while (true)
+    //// ループ始まり
+    while (should_continue(&pikachu, &mewtwo))
     {
-
         tAction command1 = selectaction1();
         tAction command2 = selectaction2();
 
         execution(&pikachu, &mewtwo, command1, command2);
     }
     // ループ終わり
+    std::cout << "ゲーム終了\n";
 }

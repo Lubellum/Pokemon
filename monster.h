@@ -24,6 +24,7 @@ public:
     );
     virtual ~CMonster();
 
+    int pass_HP();
     int Attack();
     bool Guard();
     void Damage(int aDamagePoint);
