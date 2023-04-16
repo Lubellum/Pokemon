@@ -113,8 +113,14 @@ int main()
     CMewtwo  mewtwo;
     CSquirtle squirtle;
 
-    tAction command1 = selectaction1();
-    tAction command2 = selectaction2();
+    // ループ始まり
+    while (true)
+    {
 
-    execution(&pikachu, &mewtwo, command1, command2);
+        tAction command1 = selectaction1();
+        tAction command2 = selectaction2();
+
+        execution(&pikachu, &mewtwo, command1, command2);
+    }
+    // ループ終わり
 }
