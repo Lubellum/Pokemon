@@ -139,6 +139,9 @@
     <ClInclude Include="pikachu.h" />
     <ClInclude Include="squirtle.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="処理の流れ.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

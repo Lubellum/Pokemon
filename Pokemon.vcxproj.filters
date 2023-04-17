@@ -45,4 +45,7 @@
       <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="処理の流れ.txt" />
+  </ItemGroup>
 </Project>

@@ -44,7 +44,7 @@ tAction selectaction2()
 
 void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction command2)
 {
-    /*if (command1 == tAction::nAttack && command2 == tAction::nAttack)
+    if (command1 == tAction::nAttack && command2 == tAction::nAttack)
     {
         int pokemon1Attack = pokemon1->Attack();
         pokemon2->Damage(pokemon1Attack);
@@ -67,42 +67,42 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     else
     {
         std::cout << "お互いに防御した！\n";
-    }*/
-
-
-    // 1Pの攻撃
-    if (command1 == tAction::nAttack)
-    {
-        int attackPoint = pokemon1->Attack();
-
-        // 2Pへダメージ
-        pokemon2->Damage(attackPoint);
-    }
-    else if (command1 == tAction::nGuard)
-    {
-        pokemon1->Guard();
-    }
-    else
-    {
-        std::cout << "エラー：入力に間違いがあります。";
     }
 
-    // 2Pの攻撃
-    if (command2 == tAction::nAttack)
-    {
-        int attackpoint = pokemon2->Attack();
 
-        // 1Pへダメージ
-        pokemon1->Damage(attackpoint);
-    }
-    else if (command2 == tAction::nGuard)
-    {
-        pokemon2->Guard();
-    }
-    else
-    {
-        std::cout << "エラー：入力に間違いがあります。";
-    }
+//    // 1Pの攻撃
+//    if (command1 == tAction::nAttack)
+//    {
+//        int attackPoint = pokemon1->Attack();
+//
+//        // 2Pへダメージ
+//        pokemon2->Damage(attackPoint);
+//    }
+//    else if (command1 == tAction::nGuard)
+//    {
+//        pokemon1->Guard();
+//    }
+//    else
+//    {
+//        std::cout << "エラー：入力に間違いがあります。";
+//    }
+//
+//    // 2Pの攻撃
+//    if (command2 == tAction::nAttack)
+//    {
+//        int attackpoint = pokemon2->Attack();
+//
+//        // 1Pへダメージ
+//        pokemon1->Damage(attackpoint);
+//    }
+//    else if (command2 == tAction::nGuard)
+//    {
+//        pokemon2->Guard();
+//    }
+//    else
+//    {
+//        std::cout << "エラー：入力に間違いがあります。";
+//    }
 }
 
 bool should_continue(CMonster* pokemon1, CMonster* pokemon2)
