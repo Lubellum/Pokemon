@@ -27,7 +27,7 @@ tAction random_action()
     return static_cast<tAction>(mt() % 2);
 }
 
-//1P用の入力関数
+// 1P用の入力関数
 //0 -> attack, 1 -> guard
 tAction selectaction1()
 {
@@ -35,7 +35,7 @@ tAction selectaction1()
     return input_action();
 }
 
-// 
+// 2P用の入力関数
 tAction selectaction2()
 {
     return random_action();
@@ -47,10 +47,10 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     if (command1 == tAction::nAttack && command2 == tAction::nAttack)
     {
         int pokemon1Attack = pokemon1->Attack();
-        pokemon2->Damage(pokemon1Attack);
         int pokemon2Attack = pokemon2->Attack();
+        
+        pokemon2->Damage(pokemon1Attack);
         pokemon1->Damage(pokemon2Attack);
-
     }
     else if (command1 == tAction::nGuard && command2 == tAction::nAttack)
     {
@@ -68,41 +68,6 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     {
         std::cout << "お互いに防御した！\n";
     }
-
-
-//    // 1Pの攻撃
-//    if (command1 == tAction::nAttack)
-//    {
-//        int attackPoint = pokemon1->Attack();
-//
-//        // 2Pへダメージ
-//        pokemon2->Damage(attackPoint);
-//    }
-//    else if (command1 == tAction::nGuard)
-//    {
-//        pokemon1->Guard();
-//    }
-//    else
-//    {
-//        std::cout << "エラー：入力に間違いがあります。";
-//    }
-//
-//    // 2Pの攻撃
-//    if (command2 == tAction::nAttack)
-//    {
-//        int attackpoint = pokemon2->Attack();
-//
-//        // 1Pへダメージ
-//        pokemon1->Damage(attackpoint);
-//    }
-//    else if (command2 == tAction::nGuard)
-//    {
-//        pokemon2->Guard();
-//    }
-//    else
-//    {
-//        std::cout << "エラー：入力に間違いがあります。";
-//    }
 }
 
 bool should_continue(CMonster* pokemon1, CMonster* pokemon2)
@@ -110,11 +75,11 @@ bool should_continue(CMonster* pokemon1, CMonster* pokemon2)
     int pokemon1HP = pokemon1->pass_HP();
     int pokemon2HP = pokemon2->pass_HP();
 
-    if (pokemon1HP < 0)
+    if (pokemon1HP <= 0)
     {
         return false;
     }
-    else if (pokemon2HP < 0)
+    else if (pokemon2HP <= 0)
     {
         return false;
     }
@@ -132,14 +97,15 @@ int main()
     CMewtwo  mewtwo;
     CSquirtle squirtle;
 
-    //// ループ始まり
-    while (should_continue(&pikachu, &mewtwo))
+    // ループ始まり
+    while (should_continue(&pikachu, &squirtle))
     {
         tAction command1 = selectaction1();
         tAction command2 = selectaction2();
 
-        execution(&pikachu, &mewtwo, command1, command2);
+        execution(&pikachu, &squirtle, command1, command2);
     }
     // ループ終わり
+
     std::cout << "ゲーム終了\n";
 }
