@@ -72,14 +72,12 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
 
 bool should_continue(CMonster* pokemon1, CMonster* pokemon2)
 {
-    int pokemon1HP = pokemon1->pass_HP();
-    int pokemon2HP = pokemon2->pass_HP();
 
-    if (pokemon1HP <= 0)
+    if (pokemon1->faint_flag())
     {
         return false;
     }
-    else if (pokemon2HP <= 0)
+    else if (pokemon2->faint_flag())
     {
         return false;
     }
@@ -91,8 +89,6 @@ bool should_continue(CMonster* pokemon1, CMonster* pokemon2)
 
 int main()
 {
-    random_action();
-
     CPikachu pikachu;
     CMewtwo  mewtwo;
     CSquirtle squirtle;
@@ -106,6 +102,11 @@ int main()
         execution(&pikachu, &squirtle, command1, command2);
     }
     // ループ終わり
+
+    //[0] 先鋒
+    //[1] 中堅
+    //[2] 大将
+    // 気絶していれば次のポケモンを繰り出す
 
     std::cout << "ゲーム終了\n";
 }
