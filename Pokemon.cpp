@@ -89,17 +89,17 @@ bool should_continue(CMonster* pokemon1, CMonster* pokemon2)
 
 int main()
 {
-    CPikachu pikachu;
-    CMewtwo  mewtwo;
-    CSquirtle squirtle;
+    CPikachu pikachu[3];
+    //CMewtwo  mewtwo;
+    CSquirtle squirtle[3];
 
     // ループ始まり
-    while (should_continue(&pikachu, &squirtle))
+    while (should_continue(&pikachu[0], &squirtle[0]))
     {
         tAction command1 = selectaction1();
         tAction command2 = selectaction2();
 
-        execution(&pikachu, &squirtle, command1, command2);
+        execution(&pikachu[0], &squirtle[0], command1, command2);
     }
     // ループ終わり
 
