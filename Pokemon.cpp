@@ -72,11 +72,6 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
 
 bool should_continue(CMonster* pokemon1, CMonster* pokemon2)
 {
-    for (int i = 0; i < 2; i++)
-    {
-        printf_s("pokemon1[%d]", pokemon1[i].c_str(), i);
-    }
-
     if (pokemon1->faint_flag())
     {
         return false;

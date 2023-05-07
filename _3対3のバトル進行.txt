@@ -29,8 +29,8 @@ should_continueの条件を変える。　→　バトルが継続するか判�
 ★バトル全体　→　whileループの条件式に使う
 ・if　どちらかのチームのポケモンが全滅したなら
     while (should_continue(&pikachu[i], &squirtle[i]))
-    って感じで、条件式に「i」を入れる。
-
+    って感じで、条件式に「i」を入れる?
+    
 ★should_continue
 ・forループでバトル継続の有無を指定
 ・
