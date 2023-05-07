@@ -70,10 +70,21 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     }
 }
 
-//bool IsGameFinish()
-//{
-//
-//}
+bool IsGameFinish(CMonster* team1, CMonster* team2)
+{
+    if (team1[0].faint_flag() && team1[1].faint_flag() && team1[2].faint_flag())
+    {
+        return true;
+    }
+    else if (team2[0].faint_flag() && team2[1].faint_flag() && team2[2].faint_flag())
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
 bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
 {
