@@ -45,3 +45,8 @@ x64/Debug/vc143.pdb
 .vs/slnx.sqlite
 .vs/VSWorkspaceState.json
 *.vsidx
+.vs/Pokemon/v17/.suo
+.vs/Pokemon/v17/.wsuo
+.vs/Pokemon/v17/Browse.VC.db
+x64/Debug/Pokemon.log
+x64/Debug/Pokemon.tlog/unsuccessfulbuild
