@@ -70,19 +70,24 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     }
 }
 
-bool should_continue(CMonster* pokemon1, CMonster* pokemon2)
+//bool IsGameFinish()
+//{
+//
+//}
+
+bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
 {
     if (pokemon1->faint_flag())
     {
-        return false;
+        return true;
     }
     else if (pokemon2->faint_flag())
     {
-        return false;
+        return true;
     }
     else
     {
-        return true;
+        return false;
     }
 }
 
@@ -93,7 +98,7 @@ int main()
     CSquirtle squirtle[3];
 
     // ループ始まり
-    while (should_continue(&pikachu[0], &squirtle[0]))
+    while (IsRoundFinish(&pikachu[0], &squirtle[0]))
     {
         tAction command1 = selectaction1();
         tAction command2 = selectaction2();
