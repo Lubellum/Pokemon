@@ -70,9 +70,28 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     }
 }
 
+bool Team1Annihilation(CMonster* team1)
+{
+    int Team1FaintCount = 0;
+
+    for (int i = 0; i < 3; i++)
+    {
+        if (team1[i].faint_flag())
+        {
+            Team1FaintCount++;
+        }
+    }
+
+    if (Team1FaintCount == 3)
+    {
+        return true;
+    }
+    return false;
+}
+
 bool IsGameFinish(CMonster* team1, CMonster* team2)
 {
-    if (team1[0].faint_flag() && team1[1].faint_flag() && team1[2].faint_flag())
+    if (Team1Annihilation(team1))
     {
         return true;
     }
