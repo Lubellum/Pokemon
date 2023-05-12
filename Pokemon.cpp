@@ -70,13 +70,13 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     }
 }
 
-bool Team1Annihilation(CMonster* team1)
+bool TeamAnnihilation(CMonster* team)
 {
     int Team1FaintCount = 0;
 
     for (int i = 0; i < 3; i++)
     {
-        if (team1[i].faint_flag())
+        if (team[i].faint_flag())
         {
             Team1FaintCount++;
         }
@@ -91,11 +91,11 @@ bool Team1Annihilation(CMonster* team1)
 
 bool IsGameFinish(CMonster* team1, CMonster* team2)
 {
-    if (Team1Annihilation(team1))
+    if (TeamAnnihilation(team1))
     {
         return true;
     }
-    else if (team2[0].faint_flag() && team2[1].faint_flag() && team2[2].faint_flag())
+    else if (TeamAnnihilation(team2))
     {
         return true;
     }
@@ -141,18 +141,21 @@ int main()
 
         execution(&pikachu[team1position], &squirtle[team2position], command1, command2);
 
+        // 気絶していれば次のポケモンを繰り出す
         if (IsRoundFinish(&pikachu[team1position], &squirtle[team2position]))
         {
-            team1position++;
-            team2position++;
+            if (pikachu[team1position].faint_flag())
+            {
+                team1position++;
+            }
+            
+            if (squirtle[team2position].faint_flag())
+            {
+                team2position++;
+            }
         }
     }
     // ループ終わり
-
-    //[0] 先鋒
-    //[1] 中堅
-    //[2] 大将
-    // 気絶していれば次のポケモンを繰り出す
 
     std::cout << "ゲーム終了\n";
 }
