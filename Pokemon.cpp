@@ -12,6 +12,7 @@ enum class tAction : int
 
 tAction input_action()
 {
+    // todo:数値以外を入力すると無限ループしてしまう
     std::cout << "数字を入力してください nAttack：Attack　nGuard：Guard\n";
     int command;
     std::cin >> command;
@@ -70,13 +71,13 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     }
 }
 
-bool TeamAnnihilation(CMonster* team)
+bool TeamAnnihilation(CMonster** team)
 {
     int Team1FaintCount = 0;
 
     for (int i = 0; i < 3; i++)
     {
-        if (team[i].faint_flag())
+        if (team[i]->faint_flag())
         {
             Team1FaintCount++;
         }
@@ -89,7 +90,7 @@ bool TeamAnnihilation(CMonster* team)
     return false;
 }
 
-bool IsGameFinish(CMonster* team1, CMonster* team2)
+bool IsGameFinish(CMonster** team1, CMonster** team2)
 {
     if (TeamAnnihilation(team1))
     {
@@ -123,15 +124,27 @@ bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
 
 int main()
 {
-    CPikachu pikachu[3];
+    CMonster* team1monster[3];
+
+    team1monster[0] = new CPikachu;
+    team1monster[1] = new CMewtwo;
+    team1monster[2] = new CSquirtle;
+
+    CMonster* team2monster[3];
+
+    team2monster[0] = new CPikachu;
+    team2monster[1] = new CMewtwo;
+    team2monster[2] = new CSquirtle;
+
+    //CPikachu pikachu[3];
     //CMewtwo  mewtwo;
-    CSquirtle squirtle[3];
+    //CSquirtle squirtle[3];
 
     int team1position = 0;
     int team2position = 0;
 
     // ループ始まり
-    while (IsGameFinish(pikachu, squirtle) == false)
+    while (IsGameFinish(team1monster, team2monster) == false)
     {
         std::cout << team1position << "\n";
         std::cout << team2position << "\n";
@@ -139,17 +152,17 @@ int main()
         tAction command1 = selectaction1();
         tAction command2 = selectaction2();
 
-        execution(&pikachu[team1position], &squirtle[team2position], command1, command2);
+        execution(team1monster[team1position], team2monster[team2position], command1, command2);
 
         // 気絶していれば次のポケモンを繰り出す
-        if (IsRoundFinish(&pikachu[team1position], &squirtle[team2position]))
+        if (IsRoundFinish(team1monster[team1position], team2monster[team2position]))
         {
-            if (pikachu[team1position].faint_flag())
+            if (team1monster[team1position]->faint_flag())
             {
                 team1position++;
             }
             
-            if (squirtle[team2position].faint_flag())
+            if (team2monster[team2position]->faint_flag())
             {
                 team2position++;
             }

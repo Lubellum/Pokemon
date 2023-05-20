@@ -22,12 +22,13 @@ public:
         int aAttackPoint,  // UŒ‚.
         int aDefencePoint  // –hŒä.
     );
+    // ƒˆ‰¼‘zŠÖ” = Œp³æ‚Å•K‚¸’è‹`‚·‚é
     virtual ~CMonster();
 
-    bool faint_flag();
-    int Attack();
-    bool Guard();
-    void Damage(int aDamagePoint);
+    virtual bool faint_flag();
+    virtual int Attack();
+    virtual bool Guard();
+    virtual void Damage(int aDamagePoint);
 
 private:
 
