@@ -2,6 +2,7 @@
 #include "pikachu.h"
 #include "mewtwo.h"
 #include "squirtle.h"
+#include "nidoking.h"
 #include <random>
 
 enum class tAction : int
@@ -124,17 +125,19 @@ bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
 
 int main()
 {
-    CMonster* team1monster[3];
+    CMonster* team1monster[4];
 
     team1monster[0] = new CPikachu;
     team1monster[1] = new CMewtwo;
     team1monster[2] = new CSquirtle;
+    team1monster[3] = new CNidoking;
 
-    CMonster* team2monster[3];
+    CMonster* team2monster[4];
 
     team2monster[0] = new CPikachu;
     team2monster[1] = new CMewtwo;
     team2monster[2] = new CSquirtle;
+    team2monster[3] = new CNidoking;
 
     //CPikachu pikachu[3];
     //CMewtwo  mewtwo;
