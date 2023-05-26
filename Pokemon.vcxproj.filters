@@ -30,6 +30,9 @@
     <ClCompile Include="squirtle.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="nidoking.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pikachu.h">
@@ -42,6 +45,9 @@
       <Filter>ソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="squirtle.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="nidoking.h">
       <Filter>ソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>

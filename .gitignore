@@ -58,3 +58,6 @@ x64/Debug/Pokemon.tlog/unsuccessfulbuild
 .vs/Pokemon/v17/.suo
 .vs/Pokemon/v17/ipch/AutoPCH/d7c1bac27d5e4161/PIKACHU.ipch
 .vs/Pokemon/v17/.suo
+.vs/Pokemon/v17/ipch/AutoPCH/1c18c63e8b985d73/NIDOKING.ipch
+*.ipch
+.vs/Pokemon/v17/ipch/AutoPCH/d19e0d5c70511fb/SQUIRTLE.ipch
