@@ -138,6 +138,9 @@ int main()
     team2monster[1] = new CMewtwo;
     team2monster[2] = new CSquirtle;
     team2monster[3] = new CNidoking;
+    
+    // 抽象クラスなのでインスタンスを作れない
+    //CMonster* cmonster = new CMonster;
 
     //CPikachu pikachu[3];
     //CMewtwo  mewtwo;

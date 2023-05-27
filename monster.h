@@ -13,7 +13,14 @@ class CMonster
 {
 public:
 
-    CMonster();
+    virtual bool faint_flag();
+    virtual int Attack();
+    virtual bool Guard();
+    virtual void Damage(int aDamagePoint);
+
+
+protected:
+
     CMonster
     (
         std::string aName, // 名前
@@ -23,14 +30,12 @@ public:
         int aDefencePoint  // 防御.
     );
     // 純粋仮想関数 = 継承先で必ず定義する
-    virtual ~CMonster();
+    virtual ~CMonster() = 0;
 
-    virtual bool faint_flag();
-    virtual int Attack();
-    virtual bool Guard();
-    virtual void Damage(int aDamagePoint);
 
 private:
+
+    CMonster();
 
     std::string mName; // 名前
     int mLevel;        // レベル.
