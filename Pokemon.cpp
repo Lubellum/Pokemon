@@ -78,7 +78,7 @@ bool TeamAnnihilation(CMonster** team)
 
     for (int i = 0; i < 3; i++)
     {
-        if (team[i]->faint_flag())
+        if (team[i]->FaintFlag())
         {
             Team1FaintCount++;
         }
@@ -109,11 +109,11 @@ bool IsGameFinish(CMonster** team1, CMonster** team2)
 
 bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
 {
-    if (pokemon1->faint_flag())
+    if (pokemon1->FaintFlag())
     {
         return true;
     }
-    else if (pokemon2->faint_flag())
+    else if (pokemon2->FaintFlag())
     {
         return true;
     }
@@ -163,14 +163,36 @@ int main()
         // 気絶していれば次のポケモンを繰り出す
         if (IsRoundFinish(team1monster[team1position], team2monster[team2position]))
         {
-            if (team1monster[team1position]->faint_flag())
+            if (team1monster[team1position]->FaintFlag())
             {
-                team1position++;
+                std::cout << "次のモンスターを選択してください\n";
+
+                int number = 0;
+                std::cin >> number;
+
+                if (team1monster[number]->FaintFlag())
+                {
+                    std::cout << "そのモンスターは倒れています。再度選択してください。\n";
+                    // todo:ループ処理
+                    while (true)
+                    {
+
+                    }
+                }
+                else if (team1monster[number]->FaintFlag() == false)
+                {
+
+                }
             }
             
-            if (team2monster[team2position]->faint_flag())
+            if (team2monster[team2position]->FaintFlag())
             {
-                team2position++;
+                std::cout << "次のモンスターを選択してください\n";
+
+                int number = 0;
+                std::cin >> number;
+
+                team2position = number;
             }
         }
     }

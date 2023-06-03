@@ -47,3 +47,14 @@ void execution
 tAction selectaction1()
 tAction selectaction2()
 void execution()
+
+
+
+
+
+
+
+# モンスターが倒れた時に、次のモンスターを選択する。
+
+選択されたモンスターのfaintflagがtrue(倒れている)なら、選出不可　→　選択しなおし
+faintflagがtrueでないなら(倒れていない)なら、選出可　→　選出して、バトル続行

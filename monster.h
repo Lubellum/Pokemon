@@ -13,7 +13,7 @@ class CMonster
 {
 public:
 
-    virtual bool faint_flag();
+    virtual bool FaintFlag();
     virtual int Attack();
     virtual bool Guard();
     virtual void Damage(int aDamagePoint);
