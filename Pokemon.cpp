@@ -165,23 +165,29 @@ int main()
         {
             if (team1monster[team1position]->FaintFlag())
             {
-                std::cout << "次のモンスターを選択してください\n";
+                std::cout << "チーム1：次のモンスターを選択してください\n";
 
                 int number = 0;
                 std::cin >> number;
 
                 if (team1monster[number]->FaintFlag())
                 {
-                    std::cout << "そのモンスターは倒れています。再度選択してください。\n";
                     // todo:ループ処理
                     while (true)
                     {
-
+                        std::cout << "そのモンスターは倒れています。再度選択してください。\n";
+                        std::cin >> number;
+                        
+                        if (team1monster[number]->FaintFlag() == false)
+                        {
+                            team1position = number;
+                            break;
+                        }
                     }
                 }
                 else if (team1monster[number]->FaintFlag() == false)
                 {
-
+                    team1position = number;
                 }
             }
             
