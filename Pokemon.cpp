@@ -18,6 +18,9 @@ tAction input_action()
     int command;
     std::cin >> command;
 
+    //char command[10];
+    //scanf_s("%c", &command);
+
     return static_cast<tAction>(command);
 }
 
@@ -173,16 +176,12 @@ int main()
                 if (team1monster[number]->FaintFlag())
                 {
                     // todo:ループ処理
-                    while (true)
+                    while (team1monster[number]->FaintFlag())
                     {
                         std::cout << "そのモンスターは倒れています。再度選択してください。\n";
                         std::cin >> number;
                         
-                        if (team1monster[number]->FaintFlag() == false)
-                        {
-                            team1position = number;
-                            break;
-                        }
+                        team1position = number;
                     }
                 }
                 else if (team1monster[number]->FaintFlag() == false)
