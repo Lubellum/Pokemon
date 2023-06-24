@@ -13,20 +13,28 @@ enum class tAction : int
 
 tAction input_action()
 {
-    // todo:数値以外を入力すると無限ループしてしまう
-    //char number[2];
-    //scanf_s("%s", &number, 1);
+    // trueになった時(条件に合致したとき)にブロックの中を処理する
+    while (true)
+    {
 
-    //if ((number[0] >= 48) && (number[0] <= 57))
-    //{
-    //    int command = atoi(number);
-    //}
+        std::cout << "数字を入力してください nAttack：Attack　nGuard：Guard\n";
+        std::string command;
+        std::cin >> command;
 
-    std::cout << "数字を入力してください nAttack：Attack　nGuard：Guard\n";
-    int command;
-    std::cin >> command;
-
-    return static_cast<tAction>(command);
+        // ふるいにかけてる
+        if (command.length() != 1)
+        {
+            std::cout << "入力可能な文字数は1文字です\n";
+        }
+        else if (isdigit(command.at(0)) == false )
+        {
+        }
+        else
+        {
+            int number = std::stoi(command);
+            return static_cast<tAction>(number);
+        }
+    }
 }
 
 // コマンドをランダムに決定
