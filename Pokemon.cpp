@@ -171,11 +171,12 @@ int main()
         // 気絶していれば次のポケモンを繰り出す
         if (IsRoundFinish(team1monster[team1position], team2monster[team2position]))
         {
+            
             if (team1monster[team1position]->FaintFlag())
             {
+                std::cout << "次のモンスターを選択してください\n";
                 int number = 0;
                 
-                // モンスター番号の入力を受け付けて、もし死亡フラグが立っていたら再選択
                 while (true)
                 {
                     std::cin >> number;
@@ -185,19 +186,26 @@ int main()
                         team1position = number;
                         break;
                     }
-
                     std::cout << "そのモンスターは倒れています。再度選択してください。\n";
                 }
             }
-            
+
             if (team2monster[team2position]->FaintFlag())
             {
                 std::cout << "次のモンスターを選択してください\n";
-
                 int number = 0;
-                std::cin >> number;
 
-                team2position = number;
+                while (true)
+                {
+                    std::cin >> number;
+
+                    if (team2monster[number]->FaintFlag() == false)
+                    {
+                        team2position = number;
+                        break;
+                    }
+                    std::cout << "そのモンスターは倒れています。再度選択してください。\n";
+                }
             }
         }
     }
