@@ -16,7 +16,6 @@ tAction input_action()
     // trueになった時(条件に合致したとき)にブロックの中を処理する
     while (true)
     {
-
         std::cout << "数字を入力してください nAttack：Attack　nGuard：Guard\n";
         std::string command;
         std::cin >> command;
@@ -154,13 +153,6 @@ int main()
     team2monster[1] = new CMewtwo;
     team2monster[2] = new CSquirtle;
     team2monster[3] = new CNidoking;
-    
-    // 抽象クラスなのでインスタンスを作れない
-    //CMonster* cmonster = new CMonster;
-
-    //CPikachu pikachu[3];
-    //CMewtwo  mewtwo;
-    //CSquirtle squirtle[3];
 
     int team1position = 0;
     int team2position = 0;
