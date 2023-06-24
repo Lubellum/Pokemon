@@ -14,12 +14,17 @@ enum class tAction : int
 tAction input_action()
 {
     // todo:数値以外を入力すると無限ループしてしまう
+    //char number[2];
+    //scanf_s("%s", &number, 1);
+
+    //if ((number[0] >= 48) && (number[0] <= 57))
+    //{
+    //    int command = atoi(number);
+    //}
+
     std::cout << "数字を入力してください nAttack：Attack　nGuard：Guard\n";
     int command;
     std::cin >> command;
-
-    //char command[10];
-    //scanf_s("%c", &command);
 
     return static_cast<tAction>(command);
 }
@@ -168,25 +173,20 @@ int main()
         {
             if (team1monster[team1position]->FaintFlag())
             {
-                std::cout << "チーム1：次のモンスターを選択してください\n";
-
                 int number = 0;
-                std::cin >> number;
+                
+                // モンスター番号の入力を受け付けて、もし死亡フラグが立っていたら再選択
+                while (true)
+                {
+                    std::cin >> number;
 
-                if (team1monster[number]->FaintFlag())
-                {
-                    // todo:ループ処理
-                    while (team1monster[number]->FaintFlag())
+                    if (team1monster[number]->FaintFlag() == false)
                     {
-                        std::cout << "そのモンスターは倒れています。再度選択してください。\n";
-                        std::cin >> number;
-                        
                         team1position = number;
+                        break;
                     }
-                }
-                else if (team1monster[number]->FaintFlag() == false)
-                {
-                    team1position = number;
+
+                    std::cout << "そのモンスターは倒れています。再度選択してください。\n";
                 }
             }
             
