@@ -138,6 +138,23 @@ bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
     }
 }
 
+int selectMonster(CMonster ** team)
+{
+    std::cout << "次のモンスターを選択してください\n";
+    int number = 0;
+
+    while (true)
+    {
+        std::cin >> number;
+
+        if (team[number]->FaintFlag() == false)
+        {
+            return number;
+        }
+        std::cout << "そのモンスターは倒れています。再度選択してください。\n";
+    }
+}
+
 int main()
 {
     CMonster* team1monster[4];
@@ -163,49 +180,22 @@ int main()
         std::cout << team1position << "\n";
         std::cout << team2position << "\n";
 
-        tAction command1 = selectaction1();
-        tAction command2 = selectaction2();
+        const tAction command1 = selectaction1();
+        const tAction command2 = selectaction2();
 
         execution(team1monster[team1position], team2monster[team2position], command1, command2);
 
         // 気絶していれば次のポケモンを繰り出す
         if (IsRoundFinish(team1monster[team1position], team2monster[team2position]))
         {
-            
             if (team1monster[team1position]->FaintFlag())
             {
-                std::cout << "次のモンスターを選択してください\n";
-                int number = 0;
-                
-                while (true)
-                {
-                    std::cin >> number;
-
-                    if (team1monster[number]->FaintFlag() == false)
-                    {
-                        team1position = number;
-                        break;
-                    }
-                    std::cout << "そのモンスターは倒れています。再度選択してください。\n";
-                }
+                team1position = selectMonster(team1monster);
             }
 
             if (team2monster[team2position]->FaintFlag())
             {
-                std::cout << "次のモンスターを選択してください\n";
-                int number = 0;
-
-                while (true)
-                {
-                    std::cin >> number;
-
-                    if (team2monster[number]->FaintFlag() == false)
-                    {
-                        team2position = number;
-                        break;
-                    }
-                    std::cout << "そのモンスターは倒れています。再度選択してください。\n";
-                }
+                team2position = selectMonster(team2monster);
             }
         }
     }
