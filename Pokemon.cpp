@@ -140,7 +140,7 @@ bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
 
 int selectMonster(CMonster ** team)
 {
-    std::cout << "次のモンスターを選択してください\n";
+    std::cout << "モンスターを選択してください\n";
     int number = 0;
 
     while (true)
@@ -173,6 +173,10 @@ int main()
 
     int team1position = 0;
     int team2position = 0;
+
+    // todo: 書き足したコード
+    int team1FirstSelectMonster = selectMonster(team1monster);
+    int team2FirstSelectMonster = selectMonster(team2monster);
 
     // ループ始まり
     while (IsGameFinish(team1monster, team2monster) == false)
