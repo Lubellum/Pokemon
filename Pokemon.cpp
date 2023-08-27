@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include <cassert>
 #include "pikachu.h"
 #include "mewtwo.h"
 #include "squirtle.h"
@@ -9,6 +10,15 @@ enum class tAction : int
 {
     nAttack, // 0
     nGuard,  // 1
+};
+
+enum class tMonsterNo : int
+{
+    nNone,
+    nPikachu,
+    nMewtwo,
+    nSquirtle,
+    nNidoking,
 };
 
 tAction input_action()
@@ -138,6 +148,39 @@ bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
     }
 }
 
+CMonster* createMonster()
+{
+    std::cout << "モンスターの番号を選択してください\n";
+
+    int number = 0;
+    std::cin >> number;
+    tMonsterNo monsterNo = static_cast<tMonsterNo>(number);
+
+    switch (monsterNo)
+    {
+    case tMonsterNo::nPikachu:
+        return new CPikachu;
+
+    case tMonsterNo::nMewtwo:
+        return new CMewtwo;
+
+    case tMonsterNo::nSquirtle:
+        return new CSquirtle;
+   
+    case tMonsterNo::nNidoking:
+        return new CNidoking;
+
+    default:
+        assert(false);
+        return nullptr;
+    }
+}
+
+//int selectMonster()
+//{
+//
+//}
+
 int selectMonster(CMonster ** team)
 {
     std::cout << "モンスターを選択してください\n";
@@ -157,6 +200,10 @@ int selectMonster(CMonster ** team)
 
 int main()
 {
+    // todo:チームメンバーを選択する関数の作成
+    // switch-case 
+    // まずは。。。0が選ばれていればピカチュウ、1が選ばれていればミュウツーを表示する
+
     CMonster* team1monster[4];
 
     team1monster[0] = new CPikachu;
@@ -171,12 +218,8 @@ int main()
     team2monster[2] = new CSquirtle;
     team2monster[3] = new CNidoking;
 
-    int team1position = 0;
-    int team2position = 0;
-
-    // todo: 書き足したコード
-    int team1FirstSelectMonster = selectMonster(team1monster);
-    int team2FirstSelectMonster = selectMonster(team2monster);
+    int team1position = selectMonster(team1monster);
+    int team2position = selectMonster(team2monster);
 
     // ループ始まり
     while (IsGameFinish(team1monster, team2monster) == false)
