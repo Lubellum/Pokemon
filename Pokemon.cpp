@@ -148,7 +148,7 @@ bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
     }
 }
 
-CMonster* createMonster()
+tMonsterNo inputSelectMonsterNumber()
 {
     std::cout << "モンスターの番号を選択してください\n";
 
@@ -156,6 +156,12 @@ CMonster* createMonster()
     std::cin >> number;
     tMonsterNo monsterNo = static_cast<tMonsterNo>(number);
 
+    return monsterNo;
+}
+
+// todo: newした時の、戻り値の型はCMonsterで合ってる？？(全くわからない)
+CMonster * selectMonster(tMonsterNo monsterNo)
+{
     switch (monsterNo)
     {
     case tMonsterNo::nPikachu:
@@ -166,7 +172,7 @@ CMonster* createMonster()
 
     case tMonsterNo::nSquirtle:
         return new CSquirtle;
-   
+
     case tMonsterNo::nNidoking:
         return new CNidoking;
 
@@ -174,6 +180,14 @@ CMonster* createMonster()
         assert(false);
         return nullptr;
     }
+}
+
+CMonster* createMonster()
+{
+    // todo: モンスターの番号選択と、生成を別の関数に分ける
+    tMonsterNo monsterNo = inputSelectMonsterNumber();
+
+    return selectMonster(monsterNo);
 }
 
 //int selectMonster()
@@ -206,10 +220,14 @@ int main()
 
     CMonster* team1monster[4];
 
-    team1monster[0] = new CPikachu;
-    team1monster[1] = new CMewtwo;
-    team1monster[2] = new CSquirtle;
-    team1monster[3] = new CNidoking;
+    team1monster[0] = createMonster();
+    team1monster[1] = createMonster();
+    team1monster[2] = createMonster();
+    team1monster[3] = createMonster();
+    //team1monster[0] = new CPikachu;
+    //team1monster[1] = new CMewtwo;
+    //team1monster[2] = new CSquirtle;
+    //team1monster[3] = new CNidoking;
 
     CMonster* team2monster[4];
 
