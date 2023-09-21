@@ -208,25 +208,37 @@ int SelectMonster(CMonster ** team)
 
 int main()
 {
-    CMonster* team1monster[4];
+    const int team1Number = 4;
+    CMonster* team1Monster[team1Number];
 
-    team1monster[0] = SelectMonster();
-    team1monster[1] = SelectMonster();
-    team1monster[2] = SelectMonster();
-    team1monster[3] = SelectMonster();
+    for (int i = 0; i < team1Number; i++)
+    {
+        team1Monster[i] = SelectMonster();
+    }
 
-    CMonster* team2monster[4];
+    //team1monster[0] = SelectMonster();
+    //team1monster[1] = SelectMonster();
+    //team1monster[2] = SelectMonster();
+    //team1monster[3] = SelectMonster();
 
-    team2monster[0] = new CPikachu;
-    team2monster[1] = new CMewtwo;
-    team2monster[2] = new CSquirtle;
-    team2monster[3] = new CNidoking;
+    const int team2Number = 4;
+    CMonster* team2Monster[team1Number];
 
-    int team1position = SelectMonster(team1monster);
-    int team2position = SelectMonster(team2monster);
+    for (int i = 0; i < team2Number; i++)
+    {
+        team2Monster[i] = SelectMonster();
+    }
+
+    //team2monster[0] = new CPikachu;
+    //team2monster[1] = new CMewtwo;
+    //team2monster[2] = new CSquirtle;
+    //team2monster[3] = new CNidoking;
+
+    int team1position = SelectMonster(team1Monster);
+    int team2position = SelectMonster(team2Monster);
 
     // ループ始まり
-    while (IsGameFinish(team1monster, team2monster) == false)
+    while (IsGameFinish(team1Monster, team2Monster) == false)
     {
         std::cout << team1position << "\n";
         std::cout << team2position << "\n";
@@ -234,19 +246,19 @@ int main()
         const tAction command1 = SelectAction1();
         const tAction command2 = SelectAction2();
 
-        Execution(team1monster[team1position], team2monster[team2position], command1, command2);
+        Execution(team1Monster[team1position], team2Monster[team2position], command1, command2);
 
         // 気絶していれば次のポケモンを繰り出す
-        if (IsRoundFinish(team1monster[team1position], team2monster[team2position]))
+        if (IsRoundFinish(team1Monster[team1position], team2Monster[team2position]))
         {
-            if (team1monster[team1position]->FaintFlag())
+            if (team1Monster[team1position]->FaintFlag())
             {
-                team1position = SelectMonster(team1monster);
+                team1position = SelectMonster(team1Monster);
             }
 
-            if (team2monster[team2position]->FaintFlag())
+            if (team2Monster[team2position]->FaintFlag())
             {
-                team2position = SelectMonster(team2monster);
+                team2position = SelectMonster(team2Monster);
             }
         }
     }
