@@ -21,7 +21,7 @@ enum class tMonsterNo : int
     nNidoking,
 };
 
-tAction input_action()
+tAction InputAction()
 {
     // trueになった時(条件に合致したとき)にブロックの中を処理する
     while (true)
@@ -47,7 +47,7 @@ tAction input_action()
 }
 
 // コマンドをランダムに決定
-tAction random_action()
+tAction RandomAction()
 {
     std::random_device seed;
     std::mt19937 mt(seed());
@@ -56,20 +56,20 @@ tAction random_action()
 
 // 1P用の入力関数
 //0 -> attack, 1 -> guard
-tAction selectaction1()
+tAction SelectAction1()
 {
     std::cout << "1Pの入力" << "\n";
-    return input_action();
+    return InputAction();
 }
 
 // 2P用の入力関数
-tAction selectaction2()
+tAction SelectAction2()
 {
-    return random_action();
+    return RandomAction();
 }
 
 
-void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction command2)
+void Execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction command2)
 {
     if (command1 == tAction::nAttack && command2 == tAction::nAttack)
     {
@@ -99,17 +99,17 @@ void execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
 
 bool TeamAnnihilation(CMonster** team)
 {
-    int Team1FaintCount = 0;
+    int team1FaintCount = 0;
 
     for (int i = 0; i < 3; i++)
     {
         if (team[i]->FaintFlag())
         {
-            Team1FaintCount++;
+            team1FaintCount++;
         }
     }
 
-    if (Team1FaintCount == 3)
+    if (team1FaintCount == 3)
     {
         return true;
     }
@@ -148,7 +148,7 @@ bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
     }
 }
 
-tMonsterNo inputMonsterNumber()
+tMonsterNo InputMonsterNumber()
 {
     std::cout << "モンスターの番号を選択してください\n";
 
@@ -160,9 +160,9 @@ tMonsterNo inputMonsterNumber()
 }
 
 // todo: newした時の、戻り値の型はCMonsterで合ってる？？(全くわからない)
-CMonster * createMonster(tMonsterNo monsterNo)
+CMonster * CreateMonster(tMonsterNo aMonsterNo)
 {
-    switch (monsterNo)
+    switch (aMonsterNo)
     {
     case tMonsterNo::nPikachu:
         return new CPikachu;
@@ -182,14 +182,14 @@ CMonster * createMonster(tMonsterNo monsterNo)
     }
 }
 
-CMonster* selectMonster()
+CMonster* SelectMonster()
 {
-    tMonsterNo monsterNo = inputMonsterNumber();
+    tMonsterNo monsterNo = InputMonsterNumber();
 
-    return createMonster(monsterNo);
+    return CreateMonster(monsterNo);
 }
 
-int selectMonster(CMonster ** team)
+int SelectMonster(CMonster ** team)
 {
     std::cout << "モンスターを選択してください\n";
     int number = 0;
@@ -210,10 +210,10 @@ int main()
 {
     CMonster* team1monster[4];
 
-    team1monster[0] = selectMonster();
-    team1monster[1] = selectMonster();
-    team1monster[2] = selectMonster();
-    team1monster[3] = selectMonster();
+    team1monster[0] = SelectMonster();
+    team1monster[1] = SelectMonster();
+    team1monster[2] = SelectMonster();
+    team1monster[3] = SelectMonster();
 
     CMonster* team2monster[4];
 
@@ -222,8 +222,8 @@ int main()
     team2monster[2] = new CSquirtle;
     team2monster[3] = new CNidoking;
 
-    int team1position = selectMonster(team1monster);
-    int team2position = selectMonster(team2monster);
+    int team1position = SelectMonster(team1monster);
+    int team2position = SelectMonster(team2monster);
 
     // ループ始まり
     while (IsGameFinish(team1monster, team2monster) == false)
@@ -231,22 +231,22 @@ int main()
         std::cout << team1position << "\n";
         std::cout << team2position << "\n";
 
-        const tAction command1 = selectaction1();
-        const tAction command2 = selectaction2();
+        const tAction command1 = SelectAction1();
+        const tAction command2 = SelectAction2();
 
-        execution(team1monster[team1position], team2monster[team2position], command1, command2);
+        Execution(team1monster[team1position], team2monster[team2position], command1, command2);
 
         // 気絶していれば次のポケモンを繰り出す
         if (IsRoundFinish(team1monster[team1position], team2monster[team2position]))
         {
             if (team1monster[team1position]->FaintFlag())
             {
-                team1position = selectMonster(team1monster);
+                team1position = SelectMonster(team1monster);
             }
 
             if (team2monster[team2position]->FaintFlag())
             {
-                team2position = selectMonster(team2monster);
+                team2position = SelectMonster(team2monster);
             }
         }
     }
