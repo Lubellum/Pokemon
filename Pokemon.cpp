@@ -1,10 +1,12 @@
 ﻿#include <iostream>
 #include <cassert>
+#include "monster.h"
 #include "pikachu.h"
 #include "mewtwo.h"
 #include "squirtle.h"
 #include "nidoking.h"
 #include <random>
+#include "organization.h"
 
 enum class tAction : int
 {
@@ -159,7 +161,6 @@ tMonsterNo InputMonsterNumber()
     return monsterNo;
 }
 
-// todo: newした時の、戻り値の型はCMonsterで合ってる？？(全くわからない)
 CMonster * CreateMonster(tMonsterNo aMonsterNo)
 {
     switch (aMonsterNo)
@@ -208,61 +209,50 @@ int SelectMonster(CMonster ** team)
 
 int main()
 {
+    // ゲーム開始
+    std::cout << "ゲーム開始\n";
+
+
     const int team1Number = 4;
     CMonster* team1Monster[team1Number];
 
-    for (int i = 0; i < team1Number; i++)
-    {
-        team1Monster[i] = SelectMonster();
-    }
-
-    //team1monster[0] = SelectMonster();
-    //team1monster[1] = SelectMonster();
-    //team1monster[2] = SelectMonster();
-    //team1monster[3] = SelectMonster();
-
     const int team2Number = 4;
     CMonster* team2Monster[team1Number];
-
-    for (int i = 0; i < team2Number; i++)
-    {
-        team2Monster[i] = SelectMonster();
-    }
-
-    //team2monster[0] = new CPikachu;
-    //team2monster[1] = new CMewtwo;
-    //team2monster[2] = new CSquirtle;
-    //team2monster[3] = new CNidoking;
+    
+    Organization(team1Monster, team1Number, team2Monster, team2Number);
 
     int team1position = SelectMonster(team1Monster);
     int team2position = SelectMonster(team2Monster);
 
-    // ループ始まり
+    // ループ始まり　バトル開始
     while (IsGameFinish(team1Monster, team2Monster) == false)
     {
-        std::cout << team1position << "\n";
-        std::cout << team2position << "\n";
+        // todo: gameRoop.cppに処理をまとめ中…
+        //std::cout << team1position << "\n";
+        //std::cout << team2position << "\n";
 
-        const tAction command1 = SelectAction1();
-        const tAction command2 = SelectAction2();
+        //const tAction command1 = SelectAction1();
+        //const tAction command2 = SelectAction2();
 
-        Execution(team1Monster[team1position], team2Monster[team2position], command1, command2);
+        //Execution(team1Monster[team1position], team2Monster[team2position], command1, command2);
 
-        // 気絶していれば次のポケモンを繰り出す
-        if (IsRoundFinish(team1Monster[team1position], team2Monster[team2position]))
-        {
-            if (team1Monster[team1position]->FaintFlag())
-            {
-                team1position = SelectMonster(team1Monster);
-            }
+        //// 気絶していれば次のポケモンを繰り出す
+        //if (IsRoundFinish(team1Monster[team1position], team2Monster[team2position]))
+        //{
+        //    if (team1Monster[team1position]->FaintFlag())
+        //    {
+        //        team1position = SelectMonster(team1Monster);
+        //    }
 
-            if (team2Monster[team2position]->FaintFlag())
-            {
-                team2position = SelectMonster(team2Monster);
-            }
-        }
+        //    if (team2Monster[team2position]->FaintFlag())
+        //    {
+        //        team2position = SelectMonster(team2Monster);
+        //    }
+        //}
     }
     // ループ終わり
 
+    
+    // リザルト
     std::cout << "ゲーム終了\n";
 }

@@ -33,6 +33,12 @@
     <ClCompile Include="nidoking.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="organization.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="gameRoop.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pikachu.h">
@@ -49,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="nidoking.h">
       <Filter>ソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="organization.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
