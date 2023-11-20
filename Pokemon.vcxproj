@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;_32BIT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <ForcedIncludeFiles>stdafx.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,26 +129,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="gameRoop.cpp" />
-    <ClCompile Include="mewtwo.cpp" />
-    <ClCompile Include="monster.cpp" />
-    <ClCompile Include="nidoking.cpp" />
-    <ClCompile Include="organization.cpp" />
-    <ClCompile Include="pokemon.cpp" />
-    <ClCompile Include="pikachu.cpp" />
-    <ClCompile Include="squirtle.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="mewtwo.h" />
-    <ClInclude Include="monster.h" />
-    <ClInclude Include="nidoking.h" />
-    <ClInclude Include="organization.h" />
-    <ClInclude Include="pikachu.h" />
-    <ClInclude Include="squirtle.h" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="_3対3のバトル進行.txt" />
     <Text Include="_処理の流れ.txt" />
+    <Text Include="_メモ.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\command\command.cpp" />
+    <ClCompile Include="sources\monster\createMonster.cpp" />
+    <ClCompile Include="sources\monster\mewtwo.cpp" />
+    <ClCompile Include="sources\monster\monster.cpp" />
+    <ClCompile Include="sources\monster\nidoking.cpp" />
+    <ClCompile Include="sources\monster\pikachu.cpp" />
+    <ClCompile Include="sources\monster\squirtle.cpp" />
+    <ClCompile Include="sources\Pokemon.cpp" />
+    <ClCompile Include="sources\scene\battle.cpp" />
+    <ClCompile Include="sources\scene\organization.cpp" />
+    <ClCompile Include="sources\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\command\command.h" />
+    <ClInclude Include="sources\monster\createMonster.h" />
+    <ClInclude Include="sources\monster\mewtwo.h" />
+    <ClInclude Include="sources\monster\monster.h" />
+    <ClInclude Include="sources\monster\nidoking.h" />
+    <ClInclude Include="sources\monster\pikachu.h" />
+    <ClInclude Include="sources\monster\squirtle.h" />
+    <ClInclude Include="sources\scene\battle.h" />
+    <ClInclude Include="sources\scene\organization.h" />
+    <ClInclude Include="sources\stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,55 +13,86 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="pokemon.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="mewtwo.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="pikachu.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="monster.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="squirtle.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="nidoking.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="organization.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="gameRoop.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="pikachu.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="mewtwo.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="monster.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="squirtle.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="nidoking.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="organization.h">
-      <Filter>ヘッダー ファイル</Filter>
-    </ClInclude>
+    <Filter Include="ソース ファイル\monster">
+      <UniqueIdentifier>{35de8707-4fb2-46ec-b4df-23c1d4a50493}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\scene">
+      <UniqueIdentifier>{52b5b7d1-4862-4501-89f3-3bfcf201b7b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\command">
+      <UniqueIdentifier>{47150ee9-0776-4eed-babb-5a30a04f88b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="_3対3のバトル進行.txt" />
     <Text Include="_処理の流れ.txt" />
+    <Text Include="_メモ.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sources\command\command.cpp">
+      <Filter>ソース ファイル\command</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\monster\createMonster.cpp">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\monster\mewtwo.cpp">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\monster\monster.cpp">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\monster\nidoking.cpp">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\monster\pikachu.cpp">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\monster\squirtle.cpp">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\scene\battle.cpp">
+      <Filter>ソース ファイル\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\scene\organization.cpp">
+      <Filter>ソース ファイル\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\Pokemon.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="sources\stdafx.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sources\command\command.h">
+      <Filter>ソース ファイル\command</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\monster\createMonster.h">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\monster\mewtwo.h">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\monster\monster.h">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\monster\nidoking.h">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\monster\pikachu.h">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\monster\squirtle.h">
+      <Filter>ソース ファイル\monster</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\scene\battle.h">
+      <Filter>ソース ファイル\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\scene\organization.h">
+      <Filter>ソース ファイル\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="sources\stdafx.h">
+      <Filter>ソース ファイル</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
