@@ -1,3 +1,3 @@
 #pragma once
 
-int SelectMonster(CMonster** team);
+int SelectMonster(const std::vector<CMonster*> &team);

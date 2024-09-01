@@ -1,0 +1,310 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\monster\\monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\monster\\monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\mewtwo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\monster\\mewtwo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\createMonster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\monster\\createMonster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\pikachu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\monster\\pikachu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\pikachu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\monster\\pikachu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\Pokemon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\Pokemon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\organization.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\scene\\organization.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\createMonster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\monster\\createMonster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\stdafx.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\battle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\scene\\battle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\organization.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\scene\\organization.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\command\\command.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\command\\command.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\command\\command.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\command\\command.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:sources\\scene\\battle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\_\u30E1\u30E2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F360B47F-3C80-4D52-9BA7-9DF311D629CD}|Pokemon.vcxproj|solutionrelative:_\u30E1\u30E2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 270,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 160,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "command.h",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\command\\command.h",
+              "RelativeDocumentMoniker": "sources\\command\\command.h",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\command\\command.h",
+              "RelativeToolTip": "sources\\command\\command.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2023-12-02T12:07:03.314Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "mewtwo.h",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\mewtwo.h",
+              "RelativeDocumentMoniker": "sources\\monster\\mewtwo.h",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\mewtwo.h",
+              "RelativeToolTip": "sources\\monster\\mewtwo.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-30T00:40:42.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "command.cpp",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\command\\command.cpp",
+              "RelativeDocumentMoniker": "sources\\command\\command.cpp",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\command\\command.cpp",
+              "RelativeToolTip": "sources\\command\\command.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-11-18T02:45:06.276Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "stdafx.h",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\stdafx.h",
+              "RelativeDocumentMoniker": "sources\\stdafx.h",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\stdafx.h",
+              "RelativeToolTip": "sources\\stdafx.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-21T02:01:36.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "pikachu.cpp",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\pikachu.cpp",
+              "RelativeDocumentMoniker": "sources\\monster\\pikachu.cpp",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\pikachu.cpp",
+              "RelativeToolTip": "sources\\monster\\pikachu.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-03-17T13:01:16.864Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pokemon.cpp",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\Pokemon.cpp",
+              "RelativeDocumentMoniker": "sources\\Pokemon.cpp",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\Pokemon.cpp",
+              "RelativeToolTip": "sources\\Pokemon.cpp",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-11-18T02:46:15.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_\u30E1\u30E2.txt",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\_\u30E1\u30E2.txt",
+              "RelativeDocumentMoniker": "_\u30E1\u30E2.txt",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\_\u30E1\u30E2.txt",
+              "RelativeToolTip": "_\u30E1\u30E2.txt",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2023-11-17T11:00:27.469Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 306,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "monster.h",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\monster.h",
+              "RelativeDocumentMoniker": "sources\\monster\\monster.h",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\monster.h",
+              "RelativeToolTip": "sources\\monster\\monster.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2023-12-02T13:11:07.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "monster.cpp",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\monster.cpp",
+              "RelativeDocumentMoniker": "sources\\monster\\monster.cpp",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\monster.cpp",
+              "RelativeToolTip": "sources\\monster\\monster.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-12-02T13:11:05.078Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 178,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "createMonster.cpp",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\createMonster.cpp",
+              "RelativeDocumentMoniker": "sources\\monster\\createMonster.cpp",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\createMonster.cpp",
+              "RelativeToolTip": "sources\\monster\\createMonster.cpp",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAMwCEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-07T02:05:54.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pikachu.h",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\pikachu.h",
+              "RelativeDocumentMoniker": "sources\\monster\\pikachu.h",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\pikachu.h",
+              "RelativeToolTip": "sources\\monster\\pikachu.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-03-17T13:00:42.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "organization.cpp",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\organization.cpp",
+              "RelativeDocumentMoniker": "sources\\scene\\organization.cpp",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\organization.cpp",
+              "RelativeToolTip": "sources\\scene\\organization.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-11-18T02:49:21.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "createMonster.h",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\createMonster.h",
+              "RelativeDocumentMoniker": "sources\\monster\\createMonster.h",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\monster\\createMonster.h",
+              "RelativeToolTip": "sources\\monster\\createMonster.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-01-21T02:36:40.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "organization.h",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\organization.h",
+              "RelativeDocumentMoniker": "sources\\scene\\organization.h",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\organization.h",
+              "RelativeToolTip": "sources\\scene\\organization.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2023-11-18T02:49:46.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "battle.cpp",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\battle.cpp",
+              "RelativeDocumentMoniker": "sources\\scene\\battle.cpp",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\battle.cpp",
+              "RelativeToolTip": "sources\\scene\\battle.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF4AAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2023-11-18T02:48:10.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "battle.h",
+              "DocumentMoniker": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\battle.h",
+              "RelativeDocumentMoniker": "sources\\scene\\battle.h",
+              "ToolTip": "C:\\Users\\azuky\\OneDrive\\\u30C9\u30AD\u30E5\u30E1\u30F3\u30C8\\GitHub\\Pokemon\\sources\\scene\\battle.h",
+              "RelativeToolTip": "sources\\scene\\battle.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2023-11-18T02:59:39.692Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

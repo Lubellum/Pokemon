@@ -17,19 +17,13 @@ public:
     virtual bool Guard();
     virtual void Damage(int aDamagePoint);
 
+    // 純粋仮想関数 = 継承先で必ず定義する。 =0　をつける
+    virtual ~CMonster() = 0;
 
 protected:
 
-    CMonster
-    (
-        std::string aName, // 名前
-        int aLevel,        // レベル.
-        int aHitPoint,     // HP.
-        int aAttackPoint,  // 攻撃.
-        int aDefencePoint  // 防御.
-    );
-    // 純粋仮想関数 = 継承先で必ず定義する
-    virtual ~CMonster() = 0;
+    CMonster( std::string aName, int aLevel, int aHitPoint, 
+              int aAttackPoint, int aDefencePoint );
 
 
 private:

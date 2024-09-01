@@ -3,3 +3,4 @@
 #include <cassert>
 #include <random>
 #include <string>
+#include <vector>

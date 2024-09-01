@@ -47,14 +47,14 @@ tMonsterNo InputMonsterNumber()
     return monsterNo;
 }
 
-CMonster* SelectMonster()
+CMonster* CreateMonster()
 {
     tMonsterNo monsterNo = InputMonsterNumber();
 
     return CreateMonster(monsterNo);
 }
 
-int SelectMonster(CMonster** team)
+int SelectMonster(const std::vector<CMonster*> &team)
 {
     std::cout << "モンスターを選択してください\n";
     int number = 0;
@@ -63,10 +63,17 @@ int SelectMonster(CMonster** team)
     {
         std::cin >> number;
 
-        if (team[number]->FaintFlag() == false)
+        if (number < team.size())
         {
-            return number;
+            if (team[number]->FaintFlag() == false)
+            {
+                return number;
+            }
+            std::cout << "そのモンスターは倒れています。再度選択してください。\n";
         }
-        std::cout << "そのモンスターは倒れています。再度選択してください。\n";
+        else
+        {
+            std::cout << "0～3の数字を入力してください\n";
+        }
     }
 }

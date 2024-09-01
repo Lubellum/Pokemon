@@ -38,7 +38,7 @@ void Execution(CMonster* pokemon1, CMonster* pokemon2, tAction command1, tAction
     }
 }
 
-bool TeamAnnihilation(CMonster** team)
+bool TeamAnnihilation(const std::vector<CMonster*> &team)
 {
     int team1FaintCount = 0;
 
@@ -57,13 +57,13 @@ bool TeamAnnihilation(CMonster** team)
     return false;
 }
 
-bool IsGameFinish(CMonster** team1, CMonster** team2)
+bool IsGameFinish(std::vector<CMonster*> *team1, std::vector<CMonster*> *team2)
 {
-    if (TeamAnnihilation(team1))
+    if (TeamAnnihilation(*team1))
     {
         return true;
     }
-    else if (TeamAnnihilation(team2))
+    else if (TeamAnnihilation(*team2))
     {
         return true;
     }
@@ -90,7 +90,7 @@ bool IsRoundFinish(CMonster* pokemon1, CMonster* pokemon2)
 }
 
 // ループ始まり　バトル開始
-void battle(CMonster** team1Monster, CMonster** team2Monster, int team1position, int team2position)
+void battle(std::vector<CMonster*> *team1Monster, std::vector<CMonster*> *team2Monster, int team1position, int team2position)
 {
     while (IsGameFinish(team1Monster, team2Monster) == false)
     {
@@ -100,19 +100,19 @@ void battle(CMonster** team1Monster, CMonster** team2Monster, int team1position,
         const tAction command1 = SelectAction1();
         const tAction command2 = SelectAction2();
 
-        Execution(team1Monster[team1position], team2Monster[team2position], command1, command2);
+        Execution( (*team1Monster)[team1position], (*team2Monster)[team2position], command1, command2);
 
         //// 気絶していれば次のポケモンを繰り出す
-        if (IsRoundFinish(team1Monster[team1position], team2Monster[team2position]))
+        if (IsRoundFinish( (*team1Monster)[team1position], (*team2Monster)[team2position]))
         {
-            if (team1Monster[team1position]->FaintFlag())
+            if ( (*team1Monster)[team1position]->FaintFlag())
             {
-                team1position = SelectMonster(team1Monster);
+                team1position = SelectMonster(*team1Monster);
             }
 
-            if (team2Monster[team2position]->FaintFlag())
+            if ( (*team2Monster)[team2position]->FaintFlag())
             {
-                team2position = SelectMonster(team2Monster);
+                team2position = SelectMonster(*team2Monster);
             }
         }
     }

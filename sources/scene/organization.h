@@ -4,7 +4,7 @@
 
 class CMonster;
 
-void Organization(CMonster** aTeam1Monster, int aTeam1Number, CMonster** aTeam2Monster, int aTeam2Number);
+void Organization(std::vector<CMonster*> *aTeam1Monster, int aTeam1Number, std::vector<CMonster*> *aTeam2Monster, int aTeam2Number);
 
 
 #endif // !ORGANIZATION_H_INCLUDE
